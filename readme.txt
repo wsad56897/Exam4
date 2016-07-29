@@ -1,0 +1,1 @@
+Exam1: mvn exec:java -Dexec.mainClass="Exam4.App" -Dexec.args="arg0 arg1 arg2" 
