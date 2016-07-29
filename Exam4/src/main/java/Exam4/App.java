@@ -61,18 +61,15 @@ public class App {
 	}
 
 	public static Integer[] softArr(Integer a[]) {
-		boolean flag = false;
+
 		for (int i = 0; i < a.length - 1; i++) {
 			for (int j = i + 1; j < a.length; j++) {
 				if (a[i] < a[j]) {
 					a[i] = a[i] + a[j];
 					a[j] = a[i] - a[j];
 					a[i] = a[i] - a[j];
-					flag = true;
 				}
-				if (flag) {
-					break;
-				}
+
 			}
 		}
 		return a;
